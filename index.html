@@ -1,114 +1,1115 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Productivity + - Demo</title>
+<title>Productivity Plus</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Reminders, kanban, routines, habits, expenses, plans, timelines and sleep in one app for Android and iOS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,300..700,0..1,-50..200&display=block">
+<link rel="icon" href="data:image/png;base64,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">
 <style>
-*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
-:root{--bg:#F0F0F0;--sf:#fff;--tx:#0A0A0A;--t2:#666;--t3:#999;--bd:rgba(0,0,0,.08);--nav:rgba(255,255,255,.94);--ib:#E8E8E8;--sin:#F0F0F0;--ac:#2563EB;--gr:#06D6A0;--rd:#DC2626}
-.dark{--bg:#000;--sf:#0D0D0D;--tx:#F0F0F0;--t2:#999;--t3:#555;--bd:rgba(255,255,255,.07);--nav:rgba(0,0,0,.94);--ib:#1C1C1C;--sin:#000}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#d4d4d4;display:flex;min-height:100dvh}
-.dark body{background:#161616}
-#app{position:relative;width:100%;max-width:420px;height:100dvh;max-height:880px;margin:auto;overflow:hidden;background:var(--bg);color:var(--tx)}
-@media(min-width:500px){#app{border-radius:40px;box-shadow:0 0 0 10px #000,0 30px 80px rgba(0,0,0,.45)}}
-.tabc{position:absolute;inset:0 0 60px 0;overflow-y:auto;display:none}.tabc.on{display:block}
-#nav{position:absolute;left:0;right:0;bottom:0;height:60px;background:var(--nav);border-top:1px solid var(--bd);display:flex;justify-content:space-around;align-items:center;backdrop-filter:blur(12px);z-index:2}
-.ni{display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 16px;border-radius:16px;font-size:10px;font-weight:600;color:var(--t3);cursor:pointer}.ni.on{background:var(--ib);color:var(--ac)}
-.scr{position:absolute;inset:0;z-index:5;background:var(--bg);overflow-y:auto;transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1)}.scr.in{transform:none}
-h1{font-weight:800}.pd{padding:12px 24px 40px}.sp{flex:1}
-.top{padding:20px 24px 8px}.top small{font-size:13px;color:var(--t2)}.top h1{font-size:30px}
-.gc{position:relative;overflow:hidden;border-radius:24px;color:#fff;cursor:pointer;margin-bottom:14px}
-.gc:before,.gc:after{content:"";position:absolute;border-radius:50%;background:#fff}
-.gc:before{width:160px;height:160px;right:-20px;top:-20px;opacity:.1}.gc:after{width:90px;height:90px;right:20px;top:20px;opacity:.07}
-.gi{position:relative;z-index:1;height:100%;padding:24px;display:flex;align-items:center;gap:16px}
-.gi b{display:block;font-size:22px;font-weight:800}.gi small{font-size:12px;opacity:.75;font-weight:500}
-.hd{display:flex;align-items:center;gap:12px;padding:20px 24px 8px}.hd h1{font-size:24px}.hd p{font-size:12px;color:var(--t2)}
-.bb{width:36px;height:36px;border-radius:50%;background:var(--ib);display:flex;align-items:center;justify-content:center;cursor:pointer;flex:none}
-.cb{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--sf);border:1px solid var(--bd);margin-left:8px;flex:none;cursor:pointer}.cb.f{background:var(--ac);color:#fff;border:0}
-.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:14px;margin-bottom:12px}
-.st{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}.st .card{margin:0}
-.st small{display:block;font-size:11px;font-weight:600;color:var(--t2)}.st b{font-size:22px;font-weight:800}.st i{display:block;font-style:normal;font-size:10px;color:var(--t2)}
-.lbl{font-size:11px;font-weight:700;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;margin:18px 0 8px}
-.tr{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--bd)}.tr p{font-size:15px;font-weight:500}.tr small{font-size:12px;color:var(--t3)}
-.ck{width:24px;height:24px;border-radius:50%;border:2px solid var(--bd);display:flex;align-items:center;justify-content:center;flex:none;color:#fff;cursor:pointer}.ck.on{background:var(--ac);border-color:var(--ac)}
-.dn p{color:var(--t3);text-decoration:line-through}.od small{color:var(--rd)}
-.pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.2);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600}.pill:before{content:"";width:8px;height:8px;border-radius:50%;background:#fff}
-.fab{width:56px;height:56px;border-radius:50%;background:var(--ac);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px rgba(37,99,235,.4);cursor:pointer;transform:translateY(-56px)}
-.row{display:flex;align-items:center;gap:12px}.row>div:not(.ck):not(.sw):not(.cb){flex:1}.row b{font-size:15px;font-weight:600}.row small{display:block;font-size:12px;color:var(--t2);margin-top:2px}
-.sw{width:46px;height:28px;border-radius:14px;background:var(--ib);position:relative;flex:none;cursor:pointer;transition:.2s}.sw:after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s}.sw.on{background:var(--ac)}.sw.on:after{left:21px}
-.mini{background:var(--ac);color:#fff;border:0;border-radius:20px;padding:7px 16px;font-size:13px;font-weight:700;cursor:pointer}
-.seg{display:flex;background:var(--ib);border-radius:14px;padding:3px;margin:8px 0 14px}.seg span{flex:1;text-align:center;padding:8px;border-radius:11px;font-size:13px;font-weight:600;color:var(--t2);cursor:pointer}.seg .on{background:var(--ac);color:#fff}
-.lane{display:flex;gap:12px;overflow-x:auto;padding:0 24px 40px}.col{flex:0 0 230px}.col h3{font-size:13px;font-weight:700;color:var(--t2);margin-bottom:8px}.col .card{padding:12px;border-left:4px solid var(--ac)}.col b{font-size:14px;font-weight:600}.col small{display:block;font-size:12px;color:var(--t2);margin-top:3px}
-.bars{display:flex;align-items:flex-end;gap:8px;height:96px;margin-top:10px}.bars i{flex:1;border-radius:6px 6px 2px 2px;background:var(--ac)}.bl{display:flex;gap:8px;margin-top:6px}.bl span{flex:1;text-align:center;font-size:10px;color:var(--t3)}
-.pr{height:8px;border-radius:4px;background:var(--ib);margin:10px 0 6px;overflow:hidden}.pr i{display:block;height:100%;border-radius:4px}
-.days{display:flex;gap:8px;margin-bottom:14px}.days div{flex:1;text-align:center;padding:10px 0;border-radius:14px;background:var(--sf);border:1px solid var(--bd);font-size:11px;color:var(--t2);font-weight:600}.days b{display:block;font-size:17px;color:var(--tx);margin-top:2px}.days .on{background:var(--ac);border-color:var(--ac);color:#fff}.days .on b{color:#fff}
-.dots{display:flex;gap:6px;margin-top:10px}.dots i{width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.25)}.dots i.y{background:#fff}
-.bk{position:absolute;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.25s;z-index:20}
-.sh{position:absolute;left:0;right:0;bottom:0;background:var(--sf);border-radius:24px 24px 0 0;padding:12px 20px 24px;transform:translateY(100%);transition:transform .3s;z-index:21}
-.so .bk{opacity:1;pointer-events:auto}.so .sh{transform:none}
-.hdl{width:40px;height:4px;border-radius:2px;background:var(--bd);margin:0 auto 12px}.sh h2{font-size:20px;font-weight:800}
-.chips{display:flex;gap:8px;margin:14px 0 2px}.chips span{padding:9px 16px;border-radius:12px;background:var(--sin);border:1px solid var(--bd);font-size:13px;font-weight:600;color:var(--t2);cursor:pointer}.chips .on{background:var(--ac);border-color:var(--ac);color:#fff}
-.lb{font-size:12px;font-weight:600;color:var(--t2);margin:14px 0 6px}
-.inp,.bx{width:100%;background:var(--sin);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;font:15px inherit;color:var(--tx);outline:0}.bx{font-size:14px;flex:1}
-.btn{width:100%;padding:16px;border:0;border-radius:14px;background:var(--ac);color:#fff;font-size:16px;font-weight:700;margin-top:18px;cursor:pointer}
-#pop{position:absolute;inset:0;z-index:40;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;color:#fff;background:linear-gradient(#06105D,#11407F 36%,#7E54A9 72%,#9FB8DA)}
-#pop h1{font-size:44px;line-height:1.13;margin-top:auto}#pop p{font-size:24px;opacity:.86;margin:14px 0 auto}
-#pop button{width:100%;height:78px;border:0;border-radius:40px;color:#fff;font-size:23px;font-weight:600;margin-top:16px;background:rgba(255,255,255,.24)}#pop .c{background:rgba(80,69,217,.84);margin-bottom:30px}
-#spl{position:absolute;inset:0;z-index:50;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity .35s}#spl svg{animation:r 1.3s linear infinite}@keyframes r{to{transform:rotate(1turn)}}
-</style></head><body>
-<div id="app">
-<div class="tabc on" id="t0"></div><div class="tabc" id="t1"></div><div class="tabc" id="t2"></div>
-<div id="nav"></div>
-<div class="bk" onclick="shut()"></div>
-<div class="sh"><div class="hdl"></div><h2>New Reminder</h2>
-<div class="chips" id="chips"><span class="on">Today</span><span>Tomorrow</span><span>Pick date</span></div>
-<div class="lb">Title</div><input class="inp" id="ti" placeholder="What do you need to do?">
-<div class="lb">Description</div><input class="inp" placeholder="Description (optional)">
-<div class="lb">Time</div><div class="row"><div class="bx">Today</div><div class="bx">9:00 AM</div></div>
-<div class="bx" style="margin-top:8px;border-radius:14px">No repeat</div>
-<button class="btn" onclick="mk()">Create Reminder</button></div>
-<div id="pop"><h1 id="pt"></h1><p>9:30 AM</p><button class="c" onclick="pop(0)">Complete</button><button onclick="pop(0)" style="margin:0 0 44px">Dismiss</button></div>
-<div id="spl"><svg width="230" height="230" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-linecap="round"><path d="M22 70A36 36 0 0 1 50 14a36 36 0 0 1 36 36" stroke-width="3.2"/><path d="M80 72A36 36 0 0 1 46 86" stroke-width=".8" opacity=".6"/><path d="M50 50l8-22M50 50l17 6" stroke-width="1.4"/><circle cx="50" cy="50" r="2.2" fill="#fff"/></svg></div>
-</div>
+/* Productivity Plus - marketing site shared system.
+   Layout concept: alternating "phone + copy" bands on the app's own grey/black ground,
+   with the app's gradient module cards as the only loud element. */
+:root {
+  /* Light palette */
+  --bg: #F0F0F0;
+  --surface: #FFFFFF;
+  --text: #0A0A0A;
+  --text2: #666666;
+  --text3: #999999;
+  --border: rgba(0,0,0,0.08);
+  --nav-bg: rgba(255,255,255,0.93);
+  --icon-bg: #E8E8E8;
+  --input-bg: #F2F2F2;
+  --accent: #2563EB;
+  --accent-soft: rgba(37,99,235,0.10);
+  --done: #06D6A0;
+  --error: #DC2626;
+  --bezel: #0A0A0A;
+  --shadow: 0 24px 60px -24px rgba(10,10,10,0.35);
+
+  /* Module gradients */
+  --g-reminders: linear-gradient(135deg, #00B4D8, #4361EE, #7209B7);
+  --g-kanban:    linear-gradient(135deg, #F77F00, #D62828, #7209B7);
+  --g-routine:   linear-gradient(135deg, #06D6A0, #118AB2, #073B4C);
+  --g-habit:     linear-gradient(135deg, #F72585, #B5179E, #480CA8);
+  --g-sleep:     linear-gradient(135deg, #4F46E5, #1E40AF, #0F172A);
+  --g-expense:   linear-gradient(135deg, #DC2626, #991B1B, #3B0A0A);
+  --g-timeline:  linear-gradient(135deg, #89AEC8, #5B8AA8, #2E5F7A);
+  --g-planner:   linear-gradient(135deg, #B7B7D4, #8C8CB0, #5C5C8A);
+  /* Solid first stops, used for markers and chart fills */
+  --c-reminders: #00B4D8; --c-kanban: #F77F00; --c-routine: #06D6A0; --c-habit: #F72585;
+  --c-sleep: #4F46E5; --c-expense: #DC2626; --c-timeline: #89AEC8; --c-planner: #B7B7D4;
+
+  /* Type - the app uses the platform system font, weight 800 for titles */
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --fs-hero: clamp(2.4rem, 5.6vw, 4.4rem);
+  --fs-h2: clamp(1.9rem, 3.6vw, 2.9rem);
+  --fs-h3: 1.35rem;
+  --fs-body: 1.0625rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.75rem;
+
+  /* Radii from the app: 12 buttons/inputs, 16 stat cards, 24 gradient cards */
+  --r-sm: 12px; --r-md: 16px; --r-lg: 24px;
+  --maxw: 1180px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000; --surface: #0D0D0D; --text: #F0F0F0; --text2: #999999; --text3: #555555;
+    --border: rgba(255,255,255,0.07); --nav-bg: rgba(0,0,0,0.93); --icon-bg: #1C1C1C; --input-bg: #1C1C1C;
+    --accent-soft: rgba(37,99,235,0.18); --bezel: #1C1C1C; --shadow: 0 24px 60px -24px rgba(37,99,235,0.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #000000; --surface: #0D0D0D; --text: #F0F0F0; --text2: #999999; --text3: #555555;
+  --border: rgba(255,255,255,0.07); --nav-bg: rgba(0,0,0,0.93); --icon-bg: #1C1C1C; --input-bg: #1C1C1C;
+  --accent-soft: rgba(37,99,235,0.18); --bezel: #1C1C1C; --shadow: 0 24px 60px -24px rgba(37,99,235,0.25);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: var(--fs-body); line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+/* Material icons - same family the app uses */
+.ms { font-family: "Material Symbols Outlined"; font-weight: 400; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24; user-select: none; width: 1em; overflow: hidden; flex-shrink: 0; }
+.ms.fill { font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24; }
+
+/* Layout */
+.wrap { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.section { padding-block: clamp(64px, 9vw, 120px); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 88px); align-items: center; }
+.split > * { min-width: 0; }
+@media (max-width: 860px) { .split { grid-template-columns: minmax(0, 1fr); } }
+
+/* Type */
+.eyebrow { font-size: var(--fs-label); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.h2 { font-size: var(--fs-h2); font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; margin: 10px 0 14px; text-wrap: balance; }
+.h3 { font-size: var(--fs-h3); font-weight: 800; line-height: 1.2; margin: 0 0 6px; }
+.lede { color: var(--text2); max-width: 58ch; margin: 0; text-wrap: pretty; }
+.muted { color: var(--text2); }
+
+/* Buttons - accent fill, radius 12, weight 700 like the app's Save buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; height: 48px; padding: 0 22px; border-radius: var(--r-sm); font: 700 1rem/1 var(--font); text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: #1D4ED8; }
+.btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border); }
+.btn-ghost:hover { background: var(--icon-bg); }
+
+/* Stat card */
+.statcard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); padding: 14px; }
+.statcard .label { font-size: 11px; font-weight: 600; color: var(--text2); }
+.statcard .value { font-size: 22px; font-weight: 800; color: var(--text); font-variant-numeric: tabular-nums; }
+.statcard .sub { font-size: 10px; color: var(--text2); }
+
+/* Gradient card */
+.gcard { position: relative; overflow: hidden; border-radius: var(--r-lg); color: #fff; isolation: isolate; }
+.gcard::before, .gcard::after { content: ""; position: absolute; border-radius: 50%; z-index: -1; pointer-events: none; }
+.gcard::before { width: 160px; height: 160px; right: -20px; top: -20px; background: rgba(255,255,255,0.10); }
+.gcard::after { width: 90px; height: 90px; right: 20px; top: 20px; background: rgba(255,255,255,0.07); }
+
+/* Phone frame. Screen is drawn at a 375px design width and scaled with --scale. */
+.phone { --scale: 0.8; position: relative; width: calc(375px * var(--scale) + 20px); max-width: 100%; aspect-ratio: 395 / 832; margin-inline: auto; padding: 10px; border-radius: calc(54px * var(--scale) + 10px); background: var(--bezel); box-shadow: var(--shadow); }
+.phone .screen { position: relative; width: 100%; height: 100%; border-radius: calc(54px * var(--scale)); overflow: hidden; background: var(--bg); color: var(--text); container-type: inline-size; }
+.phone .screen-inner { width: 375px; height: calc(100% / var(--scale)); transform: scale(var(--scale)); transform-origin: top left; display: flex; flex-direction: column; }
+.phone .notch { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); width: 96px; height: 26px; border-radius: 20px; background: var(--bezel); z-index: 5; }
+.status { display: flex; justify-content: space-between; align-items: center; padding: 16px 30px 0; height: 50px; font-size: 15px; font-weight: 600; flex-shrink: 0; }
+.status .ms { font-size: 17px; }
+@media (max-width: 420px) { .phone { --scale: 0.72; } }
+
+/* In-screen header */
+.scr-head { display: flex; align-items: center; gap: 12px; padding: 14px 24px 8px; }
+.scr-head .t { font-size: 24px; font-weight: 800; line-height: 1.15; white-space: nowrap; }
+.scr-head > div:not(.hbtn):not(.sp) { min-width: 0; }
+.scr-head .s { font-size: 12px; color: var(--text2); }
+.scr-head .sp { flex: 1; }
+.hbtn { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--border); color: var(--text2); flex-shrink: 0; }
+.hbtn .ms { font-size: 20px; }
+.hbtn.filled { background: var(--accent); border-color: transparent; color: #fff; }
+.hbtn.filled .ms { font-size: 22px; }
+
+/* Bottom nav */
+.tabbar { margin-top: auto; height: 84px; padding: 8px 0 24px; display: flex; justify-content: space-around; align-items: flex-start; background: var(--nav-bg); border-top: 1px solid var(--border); flex-shrink: 0; }
+.tabbar .it { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 16px; border-radius: 16px; color: var(--text3); font-size: 10px; font-weight: 600; }
+.tabbar .it.on { background: var(--icon-bg); color: var(--accent); }
+
+/* Peek: a clipped, tilted, fading phone. Only what is visible should exist in the markup. */
+.peek { --peek-h: 420px; position: relative; height: var(--peek-h); max-width: 100%; overflow: hidden; perspective: 1400px; padding-top: 44px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); mask-image: linear-gradient(to bottom, #000 62%, transparent 100%); }
+.peek > .phone { transform-origin: 50% 0; transition: transform .5s ease; }
+.peek-left > .phone { transform: rotateX(6deg) rotateY(18deg) rotateZ(-6deg); }
+.peek-right > .phone { transform: rotateX(6deg) rotateY(-18deg) rotateZ(6deg); }
+.peek-side { --peek-h: 360px; display: grid; place-items: center; padding-top: 0; -webkit-mask-image: linear-gradient(to right, #000 60%, transparent 100%); mask-image: linear-gradient(to right, #000 60%, transparent 100%); }
+.peek-side > .phone { transform-origin: 50% 50%; transform: rotate(-90deg) rotateX(10deg); }
+.peek .screen-inner { height: auto; min-height: calc(100% / var(--scale)); }
+@media (max-width: 420px) { .peek { --peek-h: 340px; } }
+@media (prefers-reduced-motion: reduce) { .peek-left > .phone { transform: rotate(-4deg); } .peek-right > .phone { transform: rotate(4deg); } }
+.peek-blur { filter: blur(6px); opacity: .7; pointer-events: none; }
+.ph-bar { display: block; height: 10px; border-radius: 6px; background: var(--icon-bg); }
+.gcard .ph-bar { background: rgba(255,255,255,0.35); }
+.soon { cursor: default; }
+.btn-primary.soon:hover { background: var(--accent); }
+
+</style>
+<style>
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--nav-bg); }
+
+  /* ---------- Nav ---------- */
+  .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--nav-bg); -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid var(--border); }
+  .nav-in { display: flex; align-items: center; gap: 16px; height: 68px; }
+  .nav-brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; white-space: nowrap; min-width: 0; }
+  .nav-brand img { border-radius: 8px; display: block; flex-shrink: 0; }
+  .nav-links { display: flex; align-items: center; gap: 4px; margin: 0 auto; padding: 0; list-style: none; }
+  .nav-links a { display: inline-flex; align-items: center; height: 40px; padding: 0 14px; border-radius: var(--r-sm); text-decoration: none; color: var(--text2); font-size: 0.9375rem; font-weight: 600; transition: background .15s ease, color .15s ease; }
+  .nav-links a:hover { color: var(--text); background: var(--icon-bg); }
+  .nav-right { display: flex; align-items: center; gap: 10px; margin-left: auto; flex-shrink: 0; }
+  .nav-links + .nav-right { margin-left: 0; }
+  .nav-theme { cursor: pointer; padding: 0; color: var(--text2); transition: background .15s ease, color .15s ease; }
+  .nav-theme:hover { background: var(--icon-bg); color: var(--text); }
+  .nav-cta { height: 44px; padding: 0 18px; }
+  @media (max-width: 760px) {
+    .nav-links { display: none; }
+    .nav-links + .nav-right { margin-left: auto; }
+  }
+  @media (max-width: 420px) { .nav-cta { display: none; } }
+
+  /* ---------- Hero ---------- */
+  .hero-band { padding-block: clamp(40px, 6vw, 88px) clamp(8px, 2vw, 24px); overflow: clip; }
+  .hero-title { font-size: var(--fs-hero); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; margin: 14px 0 20px; text-wrap: balance; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .hero-facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .hero-facts li { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px 0 10px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); color: var(--text2); font-size: var(--fs-small); font-weight: 600; white-space: nowrap; }
+  .hero-facts .ms { font-size: 18px; color: var(--accent); }
+
+  .hero-visual { position: relative; display: grid; place-items: center; padding-block: 8px; }
+  .hero-visual::before { content: ""; position: absolute; left: 50%; top: 50%; width: min(560px, 100%); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, var(--accent-soft), transparent); filter: blur(28px); pointer-events: none; z-index: 0; }
+  .hero-peek { --peek-h: 540px; z-index: 1; width: 100%; padding-inline: 24px; }
+  .hero-phone { --scale: 0.86; }
+  @media (max-width: 420px) { .hero-peek { --peek-h: 420px; padding-inline: 8px; } .hero-phone { --scale: 0.72; } }
+
+  .hero-greet { padding: 20px 24px 8px; flex-shrink: 0; }
+  .hero-greet-s { font-size: 13px; color: var(--text2); line-height: 1.5; }
+  .hero-greet-t { font-size: 30px; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
+  .hero-list { display: flex; flex-direction: column; gap: 14px; padding: 8px 24px 24px; }
+  .hero-card { height: 120px; flex-shrink: 0; padding: 24px; display: flex; align-items: center; gap: 16px; }
+  .hero-card > .ms { font-size: 32px; color: #fff; }
+  .hero-card-tx { flex: 1; min-width: 0; }
+  .hero-card-t { font-size: 22px; font-weight: 800; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hero-card .hero-chev { font-size: 24px; color: rgba(255,255,255,0.75); }
+
+  /* ---------- Download band ---------- */
+  .dl-card { background: var(--g-reminders); padding: clamp(32px, 6vw, 72px); text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .dl-card::before { width: 420px; height: 420px; right: -110px; top: -150px; }
+  .dl-card::after { width: 240px; height: 240px; right: 70px; top: 50px; }
+  .dl-icon { width: 64px; height: 64px; border-radius: 16px; display: block; box-shadow: 0 12px 30px -10px rgba(0,0,0,0.35); }
+  .dl-title { margin: 22px 0 12px; max-width: 18ch; }
+  .dl-line { margin: 0; max-width: 52ch; color: rgba(255,255,255,0.85); text-wrap: pretty; }
+  .dl-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px; margin-top: 30px; }
+  .dl-btn { background: #fff; color: var(--accent); }
+  .dl-btn.soon:hover { background: #fff; }
+  .soon:active { transform: none; }
+  .dl-chip { display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 16px 0 12px; border-radius: 999px; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.28); color: #fff; font-size: var(--fs-small); font-weight: 700; }
+  .dl-chip .ms { font-size: 20px; }
+
+  /* ---------- Footer ---------- */
+  .foot { border-top: 1px solid var(--border); padding: 56px 0 calc(28px + env(safe-area-inset-bottom, 0px)); }
+  .foot-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 1fr)); gap: 32px; }
+  .foot-grid > * { min-width: 0; }
+  .foot-brand-row { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; text-decoration: none; color: var(--text); }
+  .foot-brand-row img { border-radius: 8px; display: block; }
+  .foot-tag { margin: 12px 0 0; color: var(--text2); font-size: var(--fs-small); max-width: 34ch; }
+  .foot-h { margin: 0 0 12px; font-size: var(--fs-label); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text3); }
+  .foot-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: var(--fs-small); }
+  .foot-list a { color: var(--text2); text-decoration: none; }
+  .foot-list a:hover { color: var(--text); }
+  .foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text3); font-size: var(--fs-small); }
+  @media (max-width: 760px) {
+    .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }
+    .foot-brand { grid-column: 1 / -1; }
+  }
+</style>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="nav-brand" href="#top" aria-label="Productivity Plus home">
+      <img src="data:image/png;base64,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" alt="" width="32" height="32">
+      <span>Productivity +</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#backup">Backup</a></li>
+      <li><a href="#download">Download</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="hbtn nav-theme" id="nav-theme" type="button" aria-label="Switch theme"><span class="ms" aria-hidden="true">dark_mode</span></button>
+      <span class="btn btn-primary soon nav-cta" aria-disabled="true"><span class="ms" aria-hidden="true">schedule</span>Coming soon</span>
+    </div>
+  </div>
+</header>
+
+<section id="hero" class="hero-band">
+  <div class="wrap split">
+    <div class="hero-copy">
+      <div class="eyebrow">Coming soon to Android and iOS</div>
+      <h1 class="hero-title">Eight trackers. One home screen.</h1>
+      <p class="lede">Reminders, kanban, routines, habits, spending, plans, deadlines and sleep - all in one app. Reminders ring at the exact time and show a full-screen alert, even on the lock screen.</p>
+      <div class="hero-actions">
+        <span class="btn btn-primary soon" aria-disabled="true"><span class="ms" aria-hidden="true">schedule</span>Coming soon</span>
+        <a class="btn btn-ghost" href="#modules">See the modules</a>
+      </div>
+      <ul class="hero-facts">
+        <li><span class="ms" aria-hidden="true">grid_view</span>8 modules</li>
+        <li><span class="ms" aria-hidden="true">alarm</span>Exact-time alerts</li>
+        <li><span class="ms" aria-hidden="true">contrast</span>Light and dark</li>
+        <li><span class="ms" aria-hidden="true">backup</span>Backup and restore</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      <div class="peek peek-right hero-peek">
+        <div class="phone hero-phone" role="img" aria-label="A glimpse of the Productivity Plus home screen">
+          <div class="screen"><div class="notch"></div><div class="screen-inner">
+            <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+            <div class="hero-greet">
+              <div class="hero-greet-s">Good morning ☀️</div>
+              <div class="hero-greet-t">Productivity +</div>
+            </div>
+            <div class="hero-list">
+            <div class="gcard hero-card" style="background: var(--g-reminders)"><span class="ms">notifications</span><div class="hero-card-tx"><div class="hero-card-t">Reminders</div></div><span class="ms hero-chev">chevron_right</span></div>
+            <div class="gcard hero-card" style="background: var(--g-kanban)"><span class="ms">view_kanban</span><div class="hero-card-tx"><div class="hero-card-t">Kanban Board</div></div><span class="ms hero-chev">chevron_right</span></div>
+            <div class="gcard hero-card" style="background: var(--g-routine)"><span class="ms">timer</span><div class="hero-card-tx"><div class="hero-card-t">Daily Routine</div></div><span class="ms hero-chev">chevron_right</span></div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* ---------- Modules showcase (section 3) ---------- */
+  .mods { overflow-x: clip; }
+  .mods .mods-head { text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .mods .mods-head .lede { margin-inline: auto; }
+
+  /* Tab strip */
+  .mods .mods-tabscroll { position: relative; overflow-x: auto; overflow-y: hidden; margin: 36px -16px 0; padding: 4px 16px 8px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .mods .mods-tabscroll::-webkit-scrollbar { display: none; }
+  @media (min-width: 1100px) { .mods .mods-tabscroll { padding-inline: 2px; } }
+  .mods .mods-tabs { display: flex; gap: 0; width: max-content; margin-inline: auto; padding: 5px; border-radius: 999px; background: var(--icon-bg); border: 1px solid var(--border); }
+  .mods .mods-tab { display: inline-flex; align-items: center; gap: 7px; height: 42px; padding: 0 12px 0 9px; border-radius: 999px; border: 1px solid transparent; background: transparent; color: var(--text2); font: 600 0.875rem/1 var(--font); white-space: nowrap; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .mods .mods-tab:hover { color: var(--text); }
+  .mods .mods-tab[aria-selected="true"] { background: var(--surface); border-color: var(--border); color: var(--text); box-shadow: 0 4px 14px -6px rgba(10,10,10,0.22); }
+  .mods .mods-ti { position: relative; display: inline-grid; place-items: center; }
+  .mods .mods-ti .ms { font-size: 19px; }
+  .mods .mods-ti i { position: absolute; right: -3px; bottom: -2px; width: 9px; height: 9px; border-radius: 50%; background: var(--dot); box-shadow: 0 0 0 2px var(--icon-bg); transition: box-shadow .2s ease; }
+  .mods .mods-tab[aria-selected="true"] .mods-ti i { box-shadow: 0 0 0 2px var(--surface); }
+
+  /* Panels */
+  .mods .mods-panels { margin-top: clamp(36px, 5vw, 64px); }
+  .mods .mods-panel[hidden] { display: none; }
+  .mods .mods-panel:focus-visible { outline-offset: 8px; border-radius: var(--r-lg); }
+  .mods .mods-panel.mods-in { animation: mods-in .38s ease both; }
+  @keyframes mods-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .mods .mods-panel.mods-in { animation: none; } }
+
+  .mods .mods-copy { max-width: 520px; }
+  .mods .mods-icon { width: 48px; height: 48px; border-radius: var(--r-sm); display: grid; place-items: center; color: #fff; margin-bottom: 20px; box-shadow: 0 10px 24px -12px rgba(10,10,10,0.45); }
+  .mods .mods-icon .ms { font-size: 26px; }
+  .mods .mods-copy .h3 { font-size: clamp(1.75rem, 3vw, 2.25rem); letter-spacing: -0.02em; margin-bottom: 12px; }
+  .mods .mods-copy .lede { max-width: 46ch; }
+  .mods .mods-pts { list-style: none; margin: 24px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .mods .mods-pts li { display: flex; align-items: flex-start; gap: 12px; font-size: var(--fs-body); line-height: 1.45; }
+  .mods .mods-pts .ms { font-size: 22px; color: var(--accent); flex-shrink: 0; margin-top: 0; }
+
+  .mods .mods-vis { position: relative; display: grid; place-items: center; }
+  .mods .mods-vis::before { content: ""; position: absolute; left: 50%; top: 50%; width: min(480px, 100%); aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, var(--accent-soft), transparent); filter: blur(24px); pointer-events: none; }
+  .mods .mods-vis .peek { width: 100%; z-index: 1; }
+
+  /* ---------- In-screen pieces (375px design width) ---------- */
+  .mods .scr-head .ms:first-child { font-size: 20px; color: var(--text); }
+  .mods .mods-scr { flex: 1; min-height: 0; overflow: hidden; padding: 6px 24px 28px; display: flex; flex-direction: column; gap: 12px; }
+  .mods .mods-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); }
+  .mods .pb-s { width: 38%; }
+  .mods .pb-m { width: 58%; }
+  .mods .pb-l { width: 78%; }
+  .mods .mods-scr .ph-bar + .ph-bar { margin-top: 8px; }
+
+  /* Habit pills */
+  .mods .mods-hab { height: 130px; flex-shrink: 0; padding: 0 22px 0 12px; display: flex; align-items: center; gap: 10px; box-shadow: 0 12px 24px -14px rgba(10,10,10,0.55); }
+  .mods .mods-hab > .ms { color: rgba(255,255,255,0.4); font-size: 24px; }
+  .mods .mods-hab-tx { flex: 1; min-width: 0; }
+  .mods .mods-hab-n { font-size: 19px; font-weight: 800; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 8px; }
+  .mods .mods-log { width: 46px; height: 46px; flex-shrink: 0; border-radius: 50%; border: 2px solid #fff; color: #fff; display: grid; place-items: center; }
+  .mods .mods-log .ms { font-size: 22px; }
+
+  /* Reminder lists */
+  .mods .mods-projs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .mods .mods-proj { height: 94px; padding: 14px 16px; display: flex; flex-direction: column; justify-content: space-between; }
+  .mods .mods-proj .ms { font-size: 22px; }
+  .mods .mods-proj-n { font-size: 16px; font-weight: 800; line-height: 1.2; margin-bottom: 6px; }
+
+  /* Kanban column */
+  .mods .mods-col { border: 1px solid var(--border); border-radius: var(--r-md); padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .mods .mods-col-h { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 800; padding: 0 2px 2px; }
+  .mods .mods-col-h i { width: 8px; height: 8px; border-radius: 50%; background: var(--c-kanban); }
+  .mods .mods-kc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-sm); padding: 10px 12px; box-shadow: 0 2px 6px -4px rgba(10,10,10,0.25); }
+  .mods .mods-kc-t { font-size: 14px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+
+  /* Routine ring */
+  .mods .mods-rt { border-radius: var(--r-lg); padding: 18px; display: grid; place-items: center; }
+  .mods .mods-ring { position: relative; width: 192px; height: 192px; }
+  .mods .mods-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); display: block; }
+  .mods .mods-ring .trk { stroke: var(--icon-bg); }
+  .mods .mods-ring-c { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+  .mods .mods-digits { font-size: 42px; font-weight: 800; line-height: 1; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .mods .mods-play { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; }
+  .mods .mods-play .ms { font-size: 24px; }
+
+  /* Expense */
+  .mods .mods-total .value { font-size: 28px; }
+  .mods .mods-cats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .mods .mods-cat { height: 88px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; border-radius: var(--r-md); text-shadow: 0 1px 2px rgba(10,10,10,0.18); }
+  .mods .mods-cat::before { width: 90px; height: 90px; right: -24px; top: -30px; }
+  .mods .mods-cat::after { display: none; }
+  .mods .mods-cat-top { display: flex; align-items: center; gap: 8px; }
+  .mods .mods-cat-top .ms { width: 30px; height: 30px; border-radius: 50%; background: rgba(255,255,255,0.22); display: grid; place-items: center; font-size: 18px; flex-shrink: 0; }
+  .mods .mods-cat-n { font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .mods .mods-cat-a { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+  /* Planner pills */
+  .mods .mods-plan { min-height: 64px; padding: 12px 14px; border-radius: var(--r-md); display: flex; align-items: center; gap: 10px; background: var(--g-planner); color: #fff; }
+  .mods .mods-plan-tx { flex: 1; min-width: 0; }
+  .mods .mods-plan-n { font-size: 15px; font-weight: 800; line-height: 1.25; margin-bottom: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mods .mods-plan .ms { font-size: 18px; opacity: 0.85; }
+  .mods .mods-plan .ph-bar { background: rgba(255,255,255,0.35); }
+
+  /* Timeline card */
+  .mods .mods-tl { padding: 14px 16px; }
+  .mods .mods-tl-h { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+  .mods .mods-tl-t { flex: 1; min-width: 0; font-size: 16px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mods .mods-tl-p { font-size: 13px; font-weight: 800; color: var(--text2); font-variant-numeric: tabular-nums; }
+  .mods .mods-bar { height: 8px; border-radius: 999px; background: var(--icon-bg); overflow: hidden; margin: 12px 0 10px; }
+  .mods .mods-bar i { display: block; height: 100%; border-radius: inherit; background: var(--g-timeline); }
+
+  /* Sleep card */
+  .mods .mods-sl { padding: 20px 20px 22px; flex-shrink: 0; }
+  .mods .mods-sl-l { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.8); }
+  .mods .mods-sl-l .ms { font-size: 18px; }
+  .mods .mods-sl-v { font-size: 44px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin: 4px 0 14px; font-variant-numeric: tabular-nums; }
+
+  @media (max-width: 860px) {
+    .mods .mods-copy { max-width: none; }
+    .mods .mods-panel { gap: 40px; }
+  }
+</style>
+
+<section id="modules" class="section mods" aria-labelledby="mods-title">
+  <div class="wrap">
+    <div class="mods-head">
+      <div class="eyebrow">Eight modules</div>
+      <h2 class="h2" id="mods-title">Everything you track, on one home screen</h2>
+      <p class="lede">Reminders, boards, routines, habits, money, plans, deadlines and sleep. Each one is a tap away and works the same simple way.</p>
+    </div>
+
+    <div class="mods-tabscroll">
+      <div class="mods-tabs" role="tablist" aria-label="App modules">
+        <button class="mods-tab" role="tab" id="mods-t-reminders" aria-selected="false" aria-controls="m-reminders" tabindex="-1" style="--dot: var(--c-reminders)"><span class="mods-ti"><span class="ms">notifications</span><i></i></span>Reminders</button>
+        <button class="mods-tab" role="tab" id="mods-t-kanban" aria-selected="false" aria-controls="m-kanban" tabindex="-1" style="--dot: var(--c-kanban)"><span class="mods-ti"><span class="ms">view_kanban</span><i></i></span>Kanban Board</button>
+        <button class="mods-tab" role="tab" id="mods-t-routine" aria-selected="false" aria-controls="m-routine" tabindex="-1" style="--dot: var(--c-routine)"><span class="mods-ti"><span class="ms">timer</span><i></i></span>Daily Routine</button>
+        <button class="mods-tab" role="tab" id="mods-t-habit" aria-selected="true" aria-controls="m-habit" tabindex="0" style="--dot: var(--c-habit)"><span class="mods-ti"><span class="ms">repeat</span><i></i></span>Habit Tracking</button>
+        <button class="mods-tab" role="tab" id="mods-t-expense" aria-selected="false" aria-controls="m-expense" tabindex="-1" style="--dot: var(--c-expense)"><span class="mods-ti"><span class="ms">account_balance_wallet</span><i></i></span>Expense Tracking</button>
+        <button class="mods-tab" role="tab" id="mods-t-planner" aria-selected="false" aria-controls="m-planner" tabindex="-1" style="--dot: var(--c-planner)"><span class="mods-ti"><span class="ms">edit_calendar</span><i></i></span>Day Planner</button>
+        <button class="mods-tab" role="tab" id="mods-t-timeline" aria-selected="false" aria-controls="m-timeline" tabindex="-1" style="--dot: var(--c-timeline)"><span class="mods-ti"><span class="ms">timeline</span><i></i></span>Track Timelines</button>
+        <button class="mods-tab" role="tab" id="mods-t-sleep" aria-selected="false" aria-controls="m-sleep" tabindex="-1" style="--dot: var(--c-sleep)"><span class="mods-ti"><span class="ms">bedtime</span><i></i></span>Sleep Tracking</button>
+      </div>
+    </div>
+
+    <div class="mods-panels">
+
+      <!-- ===== Reminders ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-reminders" aria-labelledby="mods-t-reminders" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-reminders)"><span class="ms">notifications</span></div>
+          <h3 class="h3">Reminders</h3>
+          <p class="lede">Reminders that actually reach you. Group tasks into lists, pick a time and get an alert you will not miss.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">folder</span><span>Keep every task in a tidy list</span></li>
+            <li><span class="ms">replay</span><span>Repeat on the schedule that suits you</span></li>
+            <li><span class="ms">notifications_active</span><span>Hard to miss, even on the lock screen</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-left">
+            <div class="phone" role="img" aria-label="Reminders screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Reminders</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="mods-projs">
+                  <div class="gcard mods-proj" style="background: var(--g-reminders)"><span class="ms">folder</span><div><div class="mods-proj-n">Personal</div><span class="ph-bar pb-m"></span></div></div>
+                  <div class="gcard mods-proj" style="background: var(--g-kanban)"><span class="ms">folder</span><div><div class="mods-proj-n">Work</div><span class="ph-bar pb-s"></span></div></div>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Kanban ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-kanban" aria-labelledby="mods-t-kanban" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-kanban)"><span class="ms">view_kanban</span></div>
+          <h3 class="h3">Kanban Board</h3>
+          <p class="lede">Move work from idea to done. Keep a board for each part of your life and always know what comes next.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">view_kanban</span><span>See where everything stands at a glance</span></li>
+            <li><span class="ms">swap_horiz</span><span>Keep home and work apart</span></li>
+            <li><span class="ms">alarm_add</span><span>Never let a task slip by</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-right">
+            <div class="phone" role="img" aria-label="Kanban Board screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Kanban Board</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="mods-col">
+                  <div class="mods-col-h"><i></i>To Do</div>
+                  <div class="mods-kc"><div class="mods-kc-t">Plan weekend trip</div><span class="ph-bar pb-l"></span></div>
+                  <div class="mods-kc"><div class="mods-kc-t">Renew passport</div><span class="ph-bar pb-m"></span></div>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Daily Routine ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-routine" aria-labelledby="mods-t-routine" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-routine)"><span class="ms">timer</span></div>
+          <h3 class="h3">Daily Routine</h3>
+          <p class="lede">Give each part of your day its own time. Start an activity, follow the countdown and finish on schedule.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">donut_large</span><span>Stay focused with a clear countdown</span></li>
+            <li><span class="ms">wb_sunny</span><span>Build a routine that fits your day</span></li>
+            <li><span class="ms">calendar_month</span><span>Look back at the days you stuck to it</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-left">
+            <div class="phone" role="img" aria-label="Daily Routine screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Daily Routine</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="mods-card mods-rt">
+                  <div class="mods-ring">
+                    <svg viewBox="0 0 200 200" aria-hidden="true">
+                      <defs><linearGradient id="mods-rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06D6A0"/><stop offset="1" stop-color="#118AB2"/></linearGradient></defs>
+                      <circle class="trk" cx="100" cy="100" r="92" fill="none" stroke-width="8"/>
+                      <circle cx="100" cy="100" r="92" fill="none" stroke="url(#mods-rg)" stroke-width="8" stroke-linecap="round" stroke-dasharray="578.05" stroke-dashoffset="96.66"/>
+                    </svg>
+                    <div class="mods-ring-c">
+                      <div class="mods-digits">24:59</div>
+                      <span class="mods-play"><span class="ms fill">play_arrow</span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Habit Tracking (default) ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-habit" aria-labelledby="mods-t-habit" tabindex="0">
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-habit)"><span class="ms">repeat</span></div>
+          <h3 class="h3">Habit Tracking</h3>
+          <p class="lede">Build habits that stick. Every habit is a bold card you can check in on in a moment, and your progress is easy to see.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">bolt</span><span>Check in on a habit in seconds</span></li>
+            <li><span class="ms">reorder</span><span>Arrange habits to match your day</span></li>
+            <li><span class="ms">bar_chart</span><span>Watch your progress grow in charts and calendars</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-right">
+            <div class="phone" role="img" aria-label="Habit Tracking screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Habit Tracking</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="gcard mods-hab" style="background: var(--g-reminders)"><span class="ms">drag_indicator</span><div class="mods-hab-tx"><div class="mods-hab-n">Drink water</div><span class="ph-bar pb-s"></span></div><span class="mods-log"><span class="ms">refresh</span></span></div>
+                <div class="gcard mods-hab" style="background: var(--g-habit)"><span class="ms">drag_indicator</span><div class="mods-hab-tx"><div class="mods-hab-n">Read</div><span class="ph-bar pb-m"></span></div><span class="mods-log"><span class="ms">refresh</span></span></div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Expense Tracking ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-expense" aria-labelledby="mods-t-expense" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-expense)"><span class="ms">account_balance_wallet</span></div>
+          <h3 class="h3">Expense Tracking</h3>
+          <p class="lede">See where your money goes. Sort your spending into colorful categories and check your totals in charts.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">category</span><span>Know where every dollar goes</span></li>
+            <li><span class="ms">bar_chart</span><span>Spot trends from month to month</span></li>
+            <li><span class="ms">calendar_month</span><span>See your spending day by day</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-left">
+            <div class="phone" role="img" aria-label="Expense Tracking screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Expense Tracking</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="statcard mods-total"><div class="label">This month</div><div class="value">$1,373.80</div></div>
+                <div class="mods-cats">
+                  <div class="gcard mods-cat" style="background: linear-gradient(135deg, #11998E, #38EF7D)"><div class="mods-cat-top"><span class="ms">shopping_cart</span><span class="mods-cat-n">Groceries</span></div><div class="mods-cat-a">$142.80</div></div>
+                  <div class="gcard mods-cat" style="background: linear-gradient(135deg, #FF6B6B, #FFE66D)"><div class="mods-cat-top"><span class="ms">restaurant</span><span class="mods-cat-n">Food</span></div><div class="mods-cat-a">$96.40</div></div>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Day Planner ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-planner" aria-labelledby="mods-t-planner" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-planner)"><span class="ms">edit_calendar</span></div>
+          <h3 class="h3">Day Planner</h3>
+          <p class="lede">Plan your day before it starts. Lay out what is coming, check things off as you go and get a nudge when it is time.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">schedule</span><span>See your whole day at a glance</span></li>
+            <li><span class="ms">alarm</span><span>Get a nudge before each plan</span></li>
+            <li><span class="ms">calendar_month</span><span>Plan the days ahead</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-right">
+            <div class="phone" role="img" aria-label="Day Planner screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Day Planner</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="mods-plan"><div class="mods-plan-tx"><div class="mods-plan-n">Gym session</div><span class="ph-bar pb-s"></span></div><span class="ms">alarm</span></div>
+                <div class="mods-plan"><div class="mods-plan-tx"><div class="mods-plan-n">Lunch with a friend</div><span class="ph-bar pb-m"></span></div><span class="ms">alarm</span></div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Track Timelines ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-timeline" aria-labelledby="mods-t-timeline" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-timeline)"><span class="ms">timeline</span></div>
+          <h3 class="h3">Track Timelines</h3>
+          <p class="lede">Keep every deadline in view. Each timeline shows how close you are to the finish line.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">hourglass_top</span><span>Know how much time is left</span></li>
+            <li><span class="ms">priority_high</span><span>Spot anything overdue right away</span></li>
+            <li><span class="ms">inventory_2</span><span>Look back on everything you finished</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-left">
+            <div class="phone" role="img" aria-label="Track Timelines screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Track Timelines</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="mods-card mods-tl">
+                  <div class="mods-tl-h"><div class="mods-tl-t">Launch portfolio site</div><div class="mods-tl-p">65%</div></div>
+                  <span class="ph-bar pb-s"></span>
+                  <div class="mods-bar"><i style="width: 65%"></i></div>
+                  <span class="ph-bar pb-m"></span>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== Sleep Tracking ===== -->
+      <div class="mods-panel split" role="tabpanel" id="m-sleep" aria-labelledby="mods-t-sleep" tabindex="0" hidden>
+        <div class="mods-copy">
+          <div class="mods-icon" style="background: var(--g-sleep)"><span class="ms">bedtime</span></div>
+          <h3 class="h3">Sleep Tracking</h3>
+          <p class="lede">Know how you really sleep. Track your nights with almost no effort and follow your trends over time.</p>
+          <ul class="mods-pts">
+            <li><span class="ms">bedtime</span><span>Track tonight or catch up in the morning</span></li>
+            <li><span class="ms">insights</span><span>See your sleep trends by week and month</span></li>
+            <li><span class="ms">calendar_month</span><span>Look back at any night</span></li>
+          </ul>
+        </div>
+        <div class="mods-vis">
+          <div class="peek peek-right">
+            <div class="phone" role="img" aria-label="Sleep Tracking screen preview"><div class="screen"><div class="notch"></div><div class="screen-inner">
+              <div class="status"><span>9:41</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+              <div class="scr-head"><span class="ms">arrow_back_ios_new</span><div class="t">Sleep Tracking</div><div class="sp"></div><div class="hbtn filled"><span class="ms">add</span></div></div>
+              <div class="mods-scr">
+                <div class="gcard mods-sl" style="background: var(--g-sleep)">
+                  <div class="mods-sl-l"><span class="ms">bedtime</span>Last night</div>
+                  <div class="mods-sl-v">7h 32m</div>
+                  <span class="ph-bar pb-m"></span>
+                  <span class="ph-bar pb-s"></span>
+                </div>
+              </div>
+            </div></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <script>
-const $=s=>document.querySelector(s),A=$('#app'),G=[['#00B4D8','#4361EE','#7209B7'],['#F77F00','#D62828','#7209B7'],['#06D6A0','#118AB2','#073B4C'],['#F72585','#B5179E','#480CA8'],['#4F46E5','#1E40AF','#0F172A'],['#DC2626','#991B1B','#3B0A0A'],['#89AEC8','#5B8AA8','#2E5F7A'],['#B7B7D4','#8C8CB0','#5C5C8A']];
-const P={bell:'M18 16v-5a6 6 0 1 0-12 0v5l-2 2h16zM10 20a2 2 0 0 0 4 0',kanban:'M4 4h4v16H4zM10 4h4v10h-4zM16 4h4v13h-4z',timer:'<circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/>',repeat:'M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3',wallet:'M3 7h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM3 7l14-3v3M16 14h3',cal:'M4 5h16v15H4zM4 10h16M8 3v4M16 3v4',line:'M3 12h18M7 7v10M12 5v14M17 8v8',moon:'M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z',chev:'M9 6l6 6-6 6',back:'M15 5l-7 7 7 7',add:'M12 5v14M5 12h14',chk:'M5 12l5 5 9-10',trash:'M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13',home:'M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z',done:'M4 4h16v16H4zM8 12l3 3 5-6'};
-const ic=(n,s=24,c='currentColor')=>{let p=P[n];if(n=='set')return`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>`;return`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">${p[0]=='<'?p:`<path d="${p}"/>`}</svg>`};
-const gr=i=>`linear-gradient(135deg,${G[i][0]},${G[i][1]},${G[i][2]})`,gc=(i,h,x,c='')=>`<div class="gc" style="background:${gr(i)};height:${h}px" ${c}><div class="gi" style="${x}">`,E='</div></div>';
-const hd=(t,s,a='')=>`<div class="hd"><div class="bb" onclick="back()">${ic('back',16)}</div><div><h1>${t}</h1><p>${s}</p></div><span class="sp"></span>${a}</div>`;
-const add=`<div class="cb f" onclick="openS()">${ic('add',20)}</div>`,cbtn=n=>`<div class="cb">${ic(n,18)}</div>`;
-const st=(a,b,c,d)=>`<div class="card"><small>${a}</small><b>${b}</b><i>${c||''}</i></div>`;
-const bars=(v,l,col)=>`<div class="bars">${v.map(x=>`<i style="height:${x}%;${col?'background:'+col:''}"></i>`).join('')}</div><div class="bl">${l.map(x=>`<span>${x}</span>`).join('')}</div>`;
-const WD=['S','M','T','W','T','F','S'];
-let tasks=[{t:'Team standup',s:'Tomorrow 9:30 AM  🔁 every 1 day'},{t:'Call mom',s:'Today 7:00 PM'},{t:'Submit weekly report',s:'Fri 4:00 PM  🔁 every 1 week'},{t:'Water the plants',s:'Today 8:30 PM  🔁 every 2 days'},{t:'Renew passport',s:'Mon 11:00 AM'},{t:'Pay electricity bill',s:'Yesterday 6:00 PM',od:1}];
-const trow=(x,i)=>`<div class="tr ${x.d?'dn':''} ${x.od?'od':''}"><div class="ck ${x.d?'on':''}" onclick="tasks[${i}].d=!tasks[${i}].d;ref()">${x.d?ic('chk',13,'#fff'):''}</div><div class="sp"><p>${x.t}</p><small>${x.s}</small></div>${ic('trash',20,'var(--t3)')}</div>`;
-const rem=()=>{const n=tasks.filter(x=>!x.d).length;return`<div class="hd"><div class="bb" onclick="back()">${ic('back',16)}</div><h1 style="font-size:26px;flex:1">Reminders</h1><div class="cb f" style="width:44px;height:44px;background:${gr(0)}" onclick="openS()">${ic('add',22)}</div></div><div class="pd">`+[['Daily Tasks',0,Math.min(n,4)],['Personal',1,Math.max(n-4,1)]].map(p=>gc(p[1],160,'flex-direction:column;align-items:stretch;justify-content:space-between')+`<h1 style="font-size:24px;line-height:1.15">${p[0]}</h1><div class="row"><span class="pill">${p[2]} pending</span><span class="sp"></span><div class="cb" style="background:rgba(255,255,255,.2);border:0;width:36px;height:36px;color:#fff">${ic('add',22)}</div></div>`+E).join('')+`<div class="lbl">Reminders (${n})</div>`+tasks.map(trow).join('')+`<div style="position:sticky;bottom:16px;height:0;display:flex;justify-content:flex-end"><div class="fab" onclick="openS()">${ic('add',28)}</div></div></div>`};
-const KD={Personal:[['Backlog',[['Plan weekend trip','Look at train routes']]],['To Do',[['Book dentist','Before month end'],['Gym plan','4 day split']]],['In Progress',[['Read Atomic Habits','Chapter 6']]],['Done',[['Renew gym membership','']]]],Work:[['Backlog',[['Refactor auth module','Tech debt'],['Write API docs','']]],['To Do',[['Review PR #214','']]],['In Progress',[['Dashboard charts','fl_chart']]],['Done',[['Fix crash on launch','Shipped'],['Sprint retro notes','']]]],Projects:[['Backlog',[['Widget extension','iOS 18']]],['To Do',[['App Store screenshots','']]],['In Progress',[['Productivity +','Notifications rework']]],['Done',[['Dark mode','']]]]};
-let kp='Personal';
-const kan=()=>hd('Kanban Board','Track Workflow',add)+`<div style="padding:0 24px"><div class="seg">${Object.keys(KD).map(k=>`<span class="${k==kp?'on':''}" onclick="kp='${k}';ref()">${k}</span>`).join('')}</div></div><div class="lane">`+KD[kp].map((c,ci)=>`<div class="col"><h3>${c[0].toUpperCase()}  ${c[1].length}</h3>`+c[1].map(x=>`<div class="card" style="border-left-color:${G[(ci+1)%8][0]}"><b>${x[0]}</b>${x[1]?`<small>${x[1]}</small>`:''}</div>`).join('')+`</div>`).join('')+'</div>';
-const rou=()=>hd('Daily Routine','6 activities',cbtn('cal'))+`<div class="pd">`+gc(2,150,'flex-direction:column;align-items:flex-start;justify-content:center;gap:2px')+`<small>NEXT UP</small><h1 style="font-size:28px">Deep work</h1><small style="font-size:14px">10:00 AM - 90 min</small>`+E+[['Morning run','6:30 AM','30 min'],['Meditate','7:15 AM','10 min'],['Deep work','10:00 AM','90 min'],['Lunch walk','1:00 PM','20 min'],['Read','9:00 PM','30 min'],['Stretch','10:00 PM','10 min']].map(a=>`<div class="card row"><div><b>${a[0]}</b><small>${a[1]} - ${a[2]}</small></div><div class="cb f" style="background:${G[2][1]}">${ic('timer',18)}</div></div>`).join('')+'</div>';
-const hab=()=>hd('Habit Tracking','5 habits',cbtn('cal')+add)+`<div class="pd">`+[['Workout',12],['Read 20 pages',8],['Meditate',21],['Drink 2L water',5],['Side project',3]].map((h,i)=>gc(i%4,120,'flex-direction:column;align-items:stretch;justify-content:center')+`<div class="row"><div><b style="font-size:20px">${h[0]}</b><small style="display:block">🔥 ${h[1]} day streak</small></div></div><div class="dots">${[1,1,0,1,1,1,i<3?1:0].map(y=>`<i class="${y?'y':''}"></i>`).join('')}</div>`+E).join('')+'</div>';
-const exp=()=>hd('Expense Tracking','October',cbtn('cal')+add)+`<div class="pd"><div class="st">${st('This month','$1,842.50','vs $1,710 last month')}${st('Today','$38.20','2 entries')}</div><div class="card"><small style="font-size:11px;font-weight:600;color:var(--t2)">LAST 7 DAYS</small>${bars([40,65,30,90,55,20,45],'MTWTFSS'.split(''))}</div>`+[['Groceries',412,'#11998E,#38EF7D'],['Food',286,'#FF6B6B,#FFE66D'],['Transportation',140,'#4776E6,#8E54E9'],['Shopping',350,'#f953c6,#b91d73'],['Rent',600,'#D62828,#F77F00']].map(c=>`<div style="background:linear-gradient(135deg,${c[2]});border-radius:16px;padding:16px;margin-bottom:10px;color:#fff;display:flex;justify-content:space-between"><b>${c[0]}</b><b>$${c[1]}.00</b></div>`).join('')+'</div>';
-const pla=()=>{const d=new Date();return hd('Day Planner','3 plans today',cbtn('cal')+add)+`<div class="pd"><div class="days">${[-1,0,1,2,3,4,5].map(o=>{const x=new Date(d.getTime()+o*864e5);return`<div class="${o?'':'on'}">${WD[x.getDay()]}<b>${x.getDate()}</b></div>`}).join('')}</div>`+[['8:00 AM','Gym - leg day'],['11:30 AM','Client call'],['3:00 PM','Review pull requests'],['7:30 PM','Dinner with Sam']].map((p,i)=>`<div class="card row" style="border-left:4px solid ${G[(i*2+3)%8][0]}"><b style="width:76px;flex:none;color:var(--t2);font-size:13px">${p[0]}</b><div><b>${p[1]}</b></div></div>`).join('')+'</div>'};
-const tml=()=>hd('Track Timelines','4 active',add)+`<div class="pd">`+[['Launch v1.0',68,'12 days left',0],['Portfolio site',35,'30 days left',1],['Learn SwiftUI',80,'5 days left',2],['Tax filing',90,'2 days overdue',3,1]].map(t=>`<div class="card"><div class="row"><div><b style="font-size:16px">${t[0]}</b></div><small style="${t[4]?'color:var(--rd);font-weight:700':'color:var(--t2)'}">${t[2]}</small></div><div class="pr"><i style="width:${t[1]}%;background:${t[4]?'var(--rd)':gr(t[3]+4)}"></i></div><small style="font-size:11px;color:var(--t2)">${t[1]}% of time elapsed</small></div>`).join('')+`<div class="lbl">Completed</div><div class="card row"><div><b>Resume update</b><small>Finished on time</small></div><div class="ck on">${ic('chk',13,'#fff')}</div></div></div>`;
-const slp=()=>hd('Sleep Tracking','Last 7 nights',cbtn('cal'))+`<div class="pd"><div class="st">${st('Average','7h 24m','last 7 nights')}${st('Last night','7h 52m','11:10 PM - 7:02 AM')}</div><div class="card"><small style="font-size:11px;font-weight:600;color:var(--t2)">HOURS SLEPT</small>${bars([78,70,92,60,84,88,82],'MTWTFSS'.split(''),'#4F46E5')}</div>`+gc(4,72,'justify-content:center;gap:10px;font-size:18px;font-weight:800')+ic('moon',22)+`Start Sleep`+E+[['Mon','7h 40m'],['Sun','8h 05m'],['Sat','6h 15m']].map(s=>`<div class="card row"><div><b>${s[0]}</b><small>Logged manually</small></div><b>${s[1]}</b></div>`).join('')+'</div>';
-const M=[['Reminders','Tasks, lists & alerts','bell',0,rem],['Kanban Board','Track Workflow','kanban',1,kan],['Daily Routine','Track Activities','timer',2,rou],['Habit Tracking','Track your habits','repeat',3,hab],['Expense Tracking','Track your spending','wallet',5,exp],['Day Planner','Make plans for your day','cal',7,pla],['Track Timelines','Track your timelines','line',6,tml],['Sleep Tracking','Track your sleep','moon',4,slp]];
-const home=()=>`<div class="top"><small>${H<12?'Good morning ☀️':H<17?'Good afternoon 🌤️':'Good evening 🌙'}</small><h1>Productivity +</h1></div><div class="pd" style="padding-top:12px">`+M.map((m,i)=>gc(m[3],120,'',`onclick="go(${i})"`)+ic(m[2],32,'#fff')+`<div class="sp"><b>${m[0]}</b><small>${m[1]}</small></div>`+ic('chev',24,'#fff')+E).join('')+'</div>';
-const H=new Date().getHours();
-const swr=(l,s,on,id)=>`<div class="card row"><div><b>${l}</b><small>${s}</small></div><div class="sw ${on?'on':''}" ${id?'id="dk"':''} onclick="${id?'dark()':"this.classList.toggle('on')"}"></div></div>`,btr=(l,s,b,f)=>`<div class="card row"><div><b>${l}</b><small>${s}</small></div><button class="mini" ${f?`onclick="${f}"`:''}>${b}</button></div>`;
-const cfg=()=>`<div style="padding:20px 24px 8px"><h1 style="font-size:28px">Settings</h1></div><div class="pd"><div class="lbl">Appearance</div>${swr('Dark Mode','Switch app appearance',document.documentElement.classList.contains('dark'),1)}<div class="lbl">Notifications</div>${swr('Ringtone','Play one alert sound when reminder fires',1)}${swr('Vibrate','Vibrate when reminder fires',1)}${btr('Notification Permission','Allow notifications for reminders','Allow')}${btr('Full Screen Alerts','Preview the lock screen pop-up','Preview','pop(1)')}<div class="card row"><div><b>Reminder Schedule Window</b><small>Default (10 days)</small></div>${ic('chev',18,'var(--t3)')}</div>${swr('Prioritise Frequent Reminders','Gives minute and hour reminders more notification slots',0)}<div class="lbl">Backup</div>${btr('Export Backup','Save all app data as an XML file','Export')}${btr('Import Backup','Restore from an XML backup file','Import')}</div>`;
-const done=()=>`<div style="padding:20px 24px 8px"><h1 style="font-size:28px">Done</h1><small style="font-size:12px;color:var(--t2)">Browse finished tasks by month</small></div><div class="pd"><div class="chips" style="margin-top:4px"><span class="on">2026</span><span>2025</span></div>`+[['October',4],['September',9],['August',6]].map(m=>`<div class="card row"><div><b>${m[0]}</b><small>${m[1]} completed</small></div>${ic('chev',18,'var(--t3)')}</div>`).join('')+`<div class="lbl">October</div>`+['Book flight tickets','Send invoice #482','Buy birthday gift','Update resume'].map(t=>trow({t,s:'Completed today',d:1},0).replace(/onclick="[^"]*"/,'')).join('')+'</div>';
-let stack=[],tab=0;
-const tabs=[['home','Home',home],['done','Done',done],['set','Settings',cfg]];
-function nav(){$('#nav').innerHTML=tabs.map((t,i)=>`<div class="ni ${i==tab?'on':''}" onclick="sw(${i})">${ic(t[0],24)}${t[1]}</div>`).join('');tabs.forEach((t,i)=>{$('#t'+i).innerHTML=t[2]();$('#t'+i).classList.toggle('on',i==tab)})}
-function sw(i){tab=i;nav()}
-function go(i){const e=document.createElement('div');e.className='scr';e.innerHTML=M[i][4]();A.appendChild(e);stack.push({e,f:M[i][4]});e.offsetWidth;e.classList.add('in')}
-function back(){const s=stack.pop();if(!s)return;s.e.classList.remove('in');setTimeout(()=>s.e.remove(),300)}
-function ref(){const s=stack[stack.length-1];if(s)s.e.innerHTML=s.f();nav()}
-function dark(){document.documentElement.classList.toggle('dark');$('#dk').classList.toggle('on')}
-function openS(){A.classList.add('so')}function shut(){A.classList.remove('so')}
-function mk(){const t=$('#ti').value.trim();tasks.unshift({t:t||'New reminder',s:$('#chips .on').textContent.replace('Pick date','Custom')+' 9:00 AM'});$('#ti').value='';shut();ref()}
-function pop(v){$('#pop').style.display=v?'flex':'none';if(v)$('#pt').textContent=tasks[0].t}
-$('#chips').onclick=e=>{if(e.target.tagName=='SPAN'){[...$('#chips').children].forEach(c=>c.classList.remove('on'));e.target.classList.add('on')}};
-if(matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark');
-nav();setTimeout(()=>{$('#spl').style.opacity=0;setTimeout(()=>$('#spl').remove(),400)},1700);
-</script></body></html>
+(function () {
+  var root = document.getElementById('modules');
+  if (!root) return;
+  var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+  var scroller = root.querySelector('.mods-tabscroll');
+
+  /* ---------- Tabs ---------- */
+  function centerTab(tab) {
+    if (!scroller) return;
+    var left = tab.offsetLeft - (scroller.clientWidth - tab.offsetWidth) / 2;
+    try { scroller.scrollTo({ left: Math.max(0, left), behavior: reduced ? 'auto' : 'smooth' }); }
+    catch (e) { scroller.scrollLeft = Math.max(0, left); }
+  }
+
+  function activate(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      if (!panel) return;
+      if (on) {
+        if (panel.hidden) {
+          panel.hidden = false;
+          panel.classList.remove('mods-in');
+          void panel.offsetWidth;
+          panel.classList.add('mods-in');
+        }
+      } else {
+        panel.hidden = true;
+      }
+    });
+    if (focus) { try { tab.focus({ preventScroll: true }); } catch (e) { tab.focus(); } }
+    centerTab(tab);
+  }
+
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () { activate(t, false); });
+  });
+
+  root.querySelector('[role="tablist"]').addEventListener('keydown', function (e) {
+    var i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    var n = null;
+    if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+    else if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+    else if (e.key === 'Home') n = 0;
+    else if (e.key === 'End') n = tabs.length - 1;
+    if (n === null) return;
+    e.preventDefault();
+    activate(tabs[n], true);
+  });
+
+  /* ---------- Deep links (#m-habit etc. from the footer) ---------- */
+  function tabFor(id) {
+    for (var i = 0; i < tabs.length; i++) if (tabs[i].getAttribute('aria-controls') === id) return tabs[i];
+    return null;
+  }
+  function showFromId(id, scroll) {
+    var tab = tabFor(id);
+    if (!tab) return false;
+    activate(tab, false);
+    if (scroll) {
+      var go = function () { root.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); };
+      if (window.requestAnimationFrame) requestAnimationFrame(go); else go();
+    }
+    return true;
+  }
+  function fromHash() { return showFromId((location.hash || '').slice(1), true); }
+
+  window.addEventListener('hashchange', fromHash);
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="#m-"]') : null;
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!tabFor(id)) return;
+    e.preventDefault();
+    try { history.pushState(null, '', '#' + id); } catch (err) {}
+    showFromId(id, true);
+  });
+
+  /* ---------- Init ---------- */
+  if (!fromHash()) {
+    var def = tabFor('m-habit');
+    if (def) { var keep = reduced; reduced = true; centerTab(def); reduced = keep; }
+  } else {
+    window.addEventListener('load', function () { fromHash(); });
+  }
+})();
+</script>
+<style>
+  #reminders .ms, #stats .ms, #features .ms, #backup .ms { width: 1em; overflow: hidden; }
+  .rem-peek { --peek-h: 460px; }
+  @media (max-width: 420px) { .rem-peek { --peek-h: 390px; } }
+  .rem-phone .screen-inner { background: var(--g-reminders); color: #fff; position: relative; overflow: hidden; isolation: isolate; }
+  .rem-phone .screen-inner::before { content: ""; position: absolute; border-radius: 50%; z-index: -1; pointer-events: none; width: 340px; height: 340px; right: -120px; top: -90px; background: rgba(255,255,255,0.10); }
+  .rem-phone .status { color: #fff; }
+  .rem-lock { display: flex; flex-direction: column; align-items: center; padding-top: 14px; flex-shrink: 0; }
+  .rem-lock .ms { font-size: 20px; opacity: 0.85; }
+  .rem-time { font-size: 72px; font-weight: 800; line-height: 1; letter-spacing: -0.03em; margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .rem-date { font-size: 16px; font-weight: 600; color: rgba(255,255,255,0.85); margin-top: 8px; }
+  .rem-mid { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 22px 32px 0; gap: 12px; }
+  .rem-bell { width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.28); animation: rem-ring 2.4s ease-in-out infinite; }
+  .rem-bell .ms { font-size: 42px; }
+  @keyframes rem-ring { 0%, 70%, 100% { transform: rotate(0); } 75% { transform: rotate(-10deg); } 80% { transform: rotate(10deg); } 85% { transform: rotate(-6deg); } 90% { transform: rotate(6deg); } }
+  @media (prefers-reduced-motion: reduce) { .rem-bell { animation: none; } }
+  .rem-title { font-size: 24px; font-weight: 800; line-height: 1.2; }
+  .rem-note { margin-top: 24px; display: flex; align-items: center; gap: 12px; color: var(--text); font-weight: 600; }
+  .rem-note-ic { width: 40px; height: 40px; border-radius: var(--r-sm); background: var(--icon-bg); display: grid; place-items: center; flex-shrink: 0; }
+  .rem-note-ic .ms { font-size: 22px; color: var(--accent); }
+  @media (max-width: 860px) { .rem-copy { order: -1; } }
+</style>
+<section id="reminders" class="section">
+  <div class="wrap split">
+    <div class="rem-visual">
+      <div class="peek peek-left rem-peek">
+        <div class="phone rem-phone" role="img" aria-label="A reminder showing full screen on the lock screen: Call the dentist, 6:30">
+          <div class="screen"><div class="notch"></div><div class="screen-inner">
+            <div class="status"><span>6:30</span><span><span class="ms">signal_cellular_alt</span> <span class="ms">wifi</span> <span class="ms">battery_full</span></span></div>
+            <div class="rem-lock"><span class="ms">lock</span><div class="rem-time">6:30</div><div class="rem-date">Thursday, October 22</div></div>
+            <div class="rem-mid">
+              <div class="rem-bell"><span class="ms">alarm</span></div>
+              <div class="rem-title">Call the dentist</div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <div class="rem-copy">
+      <div class="eyebrow">Reminders</div>
+      <h2 class="h2">Never miss a reminder</h2>
+      <p class="lede">Reminders arrive right on time with sound and vibration. Each one shows full screen, even on the lock screen, so it is hard to miss.</p>
+      <p class="rem-note"><span class="rem-note-ic"><span class="ms" aria-hidden="true">replay</span></span><span>Repeat any reminder on the schedule that suits you.</span></p>
+    </div>
+  </div>
+</section>
+<style>
+  .st-head { max-width: 720px; }
+  .st-grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 40px; align-items: start; }
+  .st-grid3 > * { min-width: 0; }
+  @media (max-width: 1040px) { .st-grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 700px) { .st-grid3 { grid-template-columns: minmax(0, 1fr); } }
+  .st-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); padding: 18px; }
+  .st-ch { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .st-ct { margin: 0; min-width: 0; font-size: 1rem; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+  .st-ct .ms { font-size: 20px; }
+  .st-tag { font-size: var(--fs-label); font-weight: 600; color: var(--text3); white-space: nowrap; }
+  .st-sub { font-size: var(--fs-small); color: var(--text2); margin: -8px 0 12px; font-variant-numeric: tabular-nums; }
+
+  /* Habit calendar */
+  .st-wk, .st-cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; }
+  .st-wk { margin-bottom: 4px; }
+  .st-wk span { text-align: center; font-size: 11px; font-weight: 700; color: var(--text3); }
+  .st-cell { position: relative; aspect-ratio: 1 / 1.08; border-radius: 8px; background: var(--input-bg); display: flex; flex-direction: column; justify-content: space-between; padding: 4px 4px 5px; min-width: 0; }
+  .st-dn { font-size: 11px; font-weight: 700; color: var(--text2); line-height: 1; font-variant-numeric: tabular-nums; }
+  .st-dots { display: flex; justify-content: center; gap: 3px; }
+  .st-dots i { width: 6px; height: 6px; border-radius: 50%; background: transparent; }
+  .st-dots i.on { background: var(--hc); }
+  .st-pad { background: transparent; }
+  .st-fut { background: transparent; border: 1px solid var(--border); }
+  .st-fut .st-dn { color: var(--text3); }
+  .st-today { box-shadow: inset 0 0 0 2px var(--accent); }
+  .st-today .st-dn { color: var(--accent); }
+  .st-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 12px; color: var(--text2); }
+  .st-legend li { display: inline-flex; align-items: center; gap: 6px; }
+  .st-legend i { width: 8px; height: 8px; border-radius: 50%; background: var(--hc); }
+  .st-inl { display: flex; gap: 10px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .st-inl > div { flex: 1; min-width: 0; }
+  .st-inl .k { font-size: 11px; font-weight: 600; color: var(--text2); }
+  .st-inl .v { font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+  /* Sleep chart */
+  .st-svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .st-svg .st-grid { stroke: var(--border); stroke-width: 1; }
+  .st-svg .st-base { stroke: var(--text3); }
+  .st-svg .st-ax, .st-svg .st-day { fill: var(--text3); font-size: 10px; font-weight: 600; font-family: var(--font); font-variant-numeric: tabular-nums; }
+  .st-svg .st-day { fill: var(--text2); }
+  .st-svg .st-val { fill: var(--text); font-size: 11px; font-weight: 800; font-family: var(--font); font-variant-numeric: tabular-nums; }
+  .st-svg .st-bar path { fill: #4F46E5; opacity: 0.45; transition: opacity .15s ease; }
+  .st-svg .st-bar.st-max path { opacity: 1; }
+  .st-svg .st-bar:hover path, .st-svg .st-bar:focus path { opacity: 1; }
+  .st-svg .st-bar:focus { outline: none; }
+  .st-svg .st-hit { fill: transparent; }
+  .st-svg .st-goal { stroke: var(--text2); stroke-width: 1.5; stroke-dasharray: 5 4; }
+  .st-key { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12px; color: var(--text2); }
+  .st-key span { display: inline-flex; align-items: center; gap: 6px; }
+  .st-key .sw { width: 10px; height: 10px; border-radius: 3px; background: #4F46E5; }
+  .st-key .dash { width: 16px; border-top: 2px dashed var(--text2); }
+
+  /* Expenses */
+  .st-total { font-size: 26px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .st-total-l { font-size: 11px; font-weight: 600; color: var(--text2); margin-bottom: 14px; }
+  .st-exl { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .st-ex-top { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; margin-bottom: 5px; }
+  .st-ex-n { font-weight: 600; color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .st-ex-v { font-weight: 700; color: var(--text2); font-variant-numeric: tabular-nums; }
+  .st-ex-track { height: 10px; border-radius: 999px; background: var(--input-bg); overflow: hidden; }
+  .st-ex-track span { display: block; height: 100%; border-radius: 999px; }
+
+  .st-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+  .st-cards > * { min-width: 0; }
+  .st-cards .statcard { padding: 18px; }
+  .st-cards .label { display: flex; align-items: center; gap: 6px; }
+  .st-cards .label .ms { font-size: 16px; color: var(--accent); }
+  .st-cards .value { font-size: 26px; margin-top: 4px; }
+  .st-cards .sub { font-size: 12px; }
+  @media (max-width: 700px) { .st-cards { grid-template-columns: minmax(0, 1fr); } }
+</style>
+<section id="stats" class="section">
+  <div class="wrap">
+    <div class="st-head">
+      <div class="eyebrow">Calendars and charts</div>
+      <h2 class="h2">See your progress</h2>
+      <p class="lede">Habit, sleep and expense tracking each come with charts and calendars, so you can see how your week and month are going.</p>
+    </div>
+
+    <div class="st-grid3">
+      <article class="st-card" aria-labelledby="st-hab-t">
+        <div class="st-ch"><h3 class="st-ct" id="st-hab-t"><span class="ms" aria-hidden="true" style="color:var(--c-habit)">repeat</span>Habit calendar</h3><span class="st-tag">Sample data</span></div>
+        <p class="st-sub">October 2026</p>
+        <div class="st-wk" aria-hidden="true"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+        <div class="st-cal" role="grid" aria-label="October 2026 habit calendar, weeks start on Monday"><div class="st-cell st-pad" aria-hidden="true"></div><div class="st-cell st-pad" aria-hidden="true"></div><div class="st-cell st-pad" aria-hidden="true"></div><div class="st-cell" title="October 1: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 1: Drink water, Read 20 pages, Workout"><span class="st-dn">1</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 2: Drink water, Workout" role="gridcell" aria-label="October 2: Drink water, Workout"><span class="st-dn">2</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 3: Drink water, Read 20 pages" role="gridcell" aria-label="October 3: Drink water, Read 20 pages"><span class="st-dn">3</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 4: Read 20 pages, Workout" role="gridcell" aria-label="October 4: Read 20 pages, Workout"><span class="st-dn">4</span><span class="st-dots"><i class="" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 5: Drink water, Read 20 pages" role="gridcell" aria-label="October 5: Drink water, Read 20 pages"><span class="st-dn">5</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 6: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 6: Drink water, Read 20 pages, Workout"><span class="st-dn">6</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 7: Drink water, Workout" role="gridcell" aria-label="October 7: Drink water, Workout"><span class="st-dn">7</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 8: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 8: Drink water, Read 20 pages, Workout"><span class="st-dn">8</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 9: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 9: Drink water, Read 20 pages, Workout"><span class="st-dn">9</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 10: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 10: Drink water, Read 20 pages, Workout"><span class="st-dn">10</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 11: Read 20 pages" role="gridcell" aria-label="October 11: Read 20 pages"><span class="st-dn">11</span><span class="st-dots"><i class="" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 12: Drink water, Workout" role="gridcell" aria-label="October 12: Drink water, Workout"><span class="st-dn">12</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 13: nothing logged" role="gridcell" aria-label="October 13: nothing logged"><span class="st-dn">13</span><span class="st-dots"><i class="" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 14: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 14: Drink water, Read 20 pages, Workout"><span class="st-dn">14</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 15: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 15: Drink water, Read 20 pages, Workout"><span class="st-dn">15</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 16: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 16: Drink water, Read 20 pages, Workout"><span class="st-dn">16</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 17: Read 20 pages, Workout" role="gridcell" aria-label="October 17: Read 20 pages, Workout"><span class="st-dn">17</span><span class="st-dots"><i class="" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 18: Drink water, Workout" role="gridcell" aria-label="October 18: Drink water, Workout"><span class="st-dn">18</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 19: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 19: Drink water, Read 20 pages, Workout"><span class="st-dn">19</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 20: Drink water, Workout" role="gridcell" aria-label="October 20: Drink water, Workout"><span class="st-dn">20</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell" title="October 21: Drink water, Read 20 pages, Workout" role="gridcell" aria-label="October 21: Drink water, Read 20 pages, Workout"><span class="st-dn">21</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="on" style="--hc:#06D6A0"></i></span></div><div class="st-cell st-today" title="October 22: Drink water, Read 20 pages" role="gridcell" aria-label="October 22: Drink water, Read 20 pages (today)"><span class="st-dn">22</span><span class="st-dots"><i class="on" style="--hc:#00B4D8"></i><i class="on" style="--hc:#F72585"></i><i class="" style="--hc:#06D6A0"></i></span></div><div class="st-cell st-fut" title="October 23" role="gridcell" aria-label="October 23"><span class="st-dn">23</span></div><div class="st-cell st-fut" title="October 24" role="gridcell" aria-label="October 24"><span class="st-dn">24</span></div><div class="st-cell st-fut" title="October 25" role="gridcell" aria-label="October 25"><span class="st-dn">25</span></div><div class="st-cell st-fut" title="October 26" role="gridcell" aria-label="October 26"><span class="st-dn">26</span></div><div class="st-cell st-fut" title="October 27" role="gridcell" aria-label="October 27"><span class="st-dn">27</span></div><div class="st-cell st-fut" title="October 28" role="gridcell" aria-label="October 28"><span class="st-dn">28</span></div><div class="st-cell st-fut" title="October 29" role="gridcell" aria-label="October 29"><span class="st-dn">29</span></div><div class="st-cell st-fut" title="October 30" role="gridcell" aria-label="October 30"><span class="st-dn">30</span></div><div class="st-cell st-fut" title="October 31" role="gridcell" aria-label="October 31"><span class="st-dn">31</span></div><div class="st-cell st-pad" aria-hidden="true"></div></div>
+        <ul class="st-legend"><li><i style="--hc:#00B4D8"></i>Drink water <span style="color:var(--text3)">18</span></li><li><i style="--hc:#F72585"></i>Read 20 pages <span style="color:var(--text3)">16</span></li><li><i style="--hc:#06D6A0"></i>Workout <span style="color:var(--text3)">17</span></li></ul>
+        <div class="st-inl">
+          <div><div class="k">Current streak</div><div class="v">9 days</div></div>
+          <div><div class="k">Logged this month</div><div class="v">51</div></div>
+        </div>
+      </article>
+
+      <article class="st-card" aria-labelledby="st-sl-t">
+        <div class="st-ch"><h3 class="st-ct" id="st-sl-t"><span class="ms" aria-hidden="true" style="color:var(--c-sleep)">bedtime</span>Sleep this week</h3><span class="st-tag">Sample data</span></div>
+        <p class="st-sub">Hours per night, Mon to Sun</p>
+        <svg class="st-svg" viewBox="0 0 320 200" role="group" aria-label="Sleep hours per night: Mon 6.8, Tue 7.5, Wed 5.9, Thu 7.2, Fri 8.1, Sat 9.0, Sun 7.6. Goal 8 hours."><line class="st-grid st-base" x1="30" x2="312" y1="172" y2="172"/><text class="st-ax" x="24" y="175.5" text-anchor="end">0h</text><line class="st-grid" x1="30" x2="312" y1="140" y2="140"/><text class="st-ax" x="24" y="143.5" text-anchor="end">2h</text><line class="st-grid" x1="30" x2="312" y1="108" y2="108"/><text class="st-ax" x="24" y="111.5" text-anchor="end">4h</text><line class="st-grid" x1="30" x2="312" y1="76" y2="76"/><text class="st-ax" x="24" y="79.5" text-anchor="end">6h</text><text class="st-ax" x="24" y="47.5" text-anchor="end">8h</text><g class="st-bar" tabindex="0" role="img" aria-label="Mon: 6.8 hours"><title>Mon: 6.8 h</title><rect class="st-hit" x="30" y="12" width="40.3" height="160"/><path d="M39.14285714285714 172V67.2Q39.14285714285714 63.2 43.14285714285714 63.2H57.14285714285714Q61.14285714285714 63.2 61.14285714285714 67.2V172Z"/></g><text class="st-day" x="50.1" y="190" text-anchor="middle">Mon</text><g class="st-bar" tabindex="0" role="img" aria-label="Tue: 7.5 hours"><title>Tue: 7.5 h</title><rect class="st-hit" x="70.28571428571428" y="12" width="40.3" height="160"/><path d="M79.42857142857142 172V56.0Q79.42857142857142 52.0 83.42857142857142 52.0H97.42857142857142Q101.42857142857142 52.0 101.42857142857142 56.0V172Z"/></g><text class="st-day" x="90.4" y="190" text-anchor="middle">Tue</text><g class="st-bar" tabindex="0" role="img" aria-label="Wed: 5.9 hours"><title>Wed: 5.9 h</title><rect class="st-hit" x="110.57142857142857" y="12" width="40.3" height="160"/><path d="M119.71428571428572 172V81.6Q119.71428571428572 77.6 123.71428571428572 77.6H137.71428571428572Q141.71428571428572 77.6 141.71428571428572 81.6V172Z"/></g><text class="st-day" x="130.7" y="190" text-anchor="middle">Wed</text><g class="st-bar" tabindex="0" role="img" aria-label="Thu: 7.2 hours"><title>Thu: 7.2 h</title><rect class="st-hit" x="150.85714285714286" y="12" width="40.3" height="160"/><path d="M160 172V60.8Q160 56.8 164 56.8H178Q182 56.8 182 60.8V172Z"/></g><text class="st-day" x="171.0" y="190" text-anchor="middle">Thu</text><g class="st-bar" tabindex="0" role="img" aria-label="Fri: 8.1 hours"><title>Fri: 8.1 h</title><rect class="st-hit" x="191.14285714285714" y="12" width="40.3" height="160"/><path d="M200.28571428571428 172V46.4Q200.28571428571428 42.4 204.28571428571428 42.4H218.28571428571428Q222.28571428571428 42.4 222.28571428571428 46.4V172Z"/></g><text class="st-day" x="211.3" y="190" text-anchor="middle">Fri</text><g class="st-bar st-max" tabindex="0" role="img" aria-label="Sat: 9.0 hours"><title>Sat: 9.0 h</title><rect class="st-hit" x="231.42857142857142" y="12" width="40.3" height="160"/><path d="M240.57142857142856 172V32.0Q240.57142857142856 28.0 244.57142857142856 28.0H258.57142857142856Q262.57142857142856 28.0 262.57142857142856 32.0V172Z"/></g><text class="st-day" x="251.6" y="190" text-anchor="middle">Sat</text><text class="st-val" x="251.6" y="22.0" text-anchor="middle">9.0</text><g class="st-bar" tabindex="0" role="img" aria-label="Sun: 7.6 hours"><title>Sun: 7.6 h</title><rect class="st-hit" x="271.7142857142857" y="12" width="40.3" height="160"/><path d="M280.8571428571429 172V54.4Q280.8571428571429 50.4 284.8571428571429 50.4H298.8571428571429Q302.8571428571429 50.4 302.8571428571429 54.4V172Z"/></g><text class="st-day" x="291.9" y="190" text-anchor="middle">Sun</text><line class="st-goal" x1="30" x2="312" y1="44" y2="44"/></svg>
+        <div class="st-key"><span><i class="sw"></i>Hours slept</span><span><i class="dash"></i>8h goal</span></div>
+        <div class="st-inl">
+          <div><div class="k">Average</div><div class="v">7.4 h</div></div>
+          <div><div class="k">Goal met</div><div class="v">2 of 7 nights</div></div>
+        </div>
+      </article>
+
+      <article class="st-card" aria-labelledby="st-ex-t">
+        <div class="st-ch"><h3 class="st-ct" id="st-ex-t"><span class="ms" aria-hidden="true" style="color:var(--c-expense)">account_balance_wallet</span>October by category</h3><span class="st-tag">Sample data</span></div>
+        <div class="st-total">$2,140.02</div>
+        <div class="st-total-l">Total spent in October</div>
+        <ul class="st-exl"><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Rent</span><span class="st-ex-v">$1,200.00</span></div><div class="st-ex-track"><span style="width:100.0%;background:linear-gradient(90deg, #D62828, #F77F00)"></span></div></li><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Groceries</span><span class="st-ex-v">$386.40</span></div><div class="st-ex-track"><span style="width:32.2%;background:linear-gradient(90deg, #11998E, #38EF7D)"></span></div></li><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Food</span><span class="st-ex-v">$214.75</span></div><div class="st-ex-track"><span style="width:17.9%;background:linear-gradient(90deg, #FF6B6B, #FFE66D)"></span></div></li><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Shopping</span><span class="st-ex-v">$162.30</span></div><div class="st-ex-track"><span style="width:13.5%;background:linear-gradient(90deg, #f953c6, #b91d73)"></span></div></li><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Transportation</span><span class="st-ex-v">$128.60</span></div><div class="st-ex-track"><span style="width:10.7%;background:linear-gradient(90deg, #4776E6, #8E54E9)"></span></div></li><li class="st-ex"><div class="st-ex-top"><span class="st-ex-n">Subscriptions</span><span class="st-ex-v">$47.97</span></div><div class="st-ex-track"><span style="width:4.0%;background:linear-gradient(90deg, #56ab2f, #a8e063)"></span></div></li></ul>
+      </article>
+    </div>
+
+    <div class="st-cards">
+      <div class="statcard"><div class="label"><span class="ms" aria-hidden="true">local_fire_department</span>Current streak</div><div class="value">9 days</div><div class="sub">At least one habit logged each day</div></div>
+      <div class="statcard"><div class="label"><span class="ms" aria-hidden="true">bedtime</span>Average sleep</div><div class="value">7.4 h</div><div class="sub">Last 7 nights</div></div>
+      <div class="statcard"><div class="label"><span class="ms" aria-hidden="true">payments</span>Spent in October</div><div class="value">$2,140.02</div><div class="sub">Across 6 categories</div></div>
+    </div>
+  </div>
+</section>
+<style>
+  .ft-head { max-width: 720px; }
+  .ft-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin: 40px 0 0; padding: 0; list-style: none; }
+  .ft-grid > * { min-width: 0; }
+  @media (max-width: 1100px) { .ft-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  @media (max-width: 900px) { .ft-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 700px) { .ft-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+  .ft-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-md); padding: 18px; transition: transform .2s ease, box-shadow .2s ease; }
+  .ft-tile:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .ft-ic { width: 40px; height: 40px; border-radius: var(--r-sm); background: var(--icon-bg); display: grid; place-items: center; margin-bottom: 14px; }
+  .ft-ic .ms { font-size: 22px; color: var(--accent); }
+  .ft-t { margin: 0 0 4px; font-size: 1rem; font-weight: 800; line-height: 1.25; overflow-wrap: anywhere; }
+  .ft-s { margin: 0; font-size: var(--fs-small); color: var(--text2); line-height: 1.45; }
+  @media (max-width: 420px) { .ft-tile { padding: 14px; } }
+</style>
+<section id="features" class="section">
+  <div class="wrap">
+    <div class="ft-head">
+      <div class="eyebrow">Features</div>
+      <h2 class="h2">Everything else, built in</h2>
+      <p class="lede">The small things that make the app dependable. They work across all eight modules, with no extra setup.</p>
+    </div>
+    <ul class="ft-grid">
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">notifications_active</span></span><h3 class="ft-t">Native notifications</h3><p class="ft-s">Your sound and vibration, right on time.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">replay</span></span><h3 class="ft-t">Recurring reminders</h3><p class="ft-s">Repeat on the schedule that suits you.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">fullscreen</span></span><h3 class="ft-t">Full-screen pop-up</h3><p class="ft-s">Shows even on the lock screen.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">shield_moon</span></span><h3 class="ft-t">Reliable alerts</h3><p class="ft-s">Reminders still arrive when the app is closed.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">contrast</span></span><h3 class="ft-t">Dark and light mode</h3><p class="ft-s">Pick the look that suits you.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">backup</span></span><h3 class="ft-t">Backup and restore</h3><p class="ft-s">Save everything to one file and bring it back any time.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">inventory_2</span></span><h3 class="ft-t">Completed archive</h3><p class="ft-s">Look back on everything you have finished.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">bar_chart</span></span><h3 class="ft-t">Charts</h3><p class="ft-s">See trends in sleep, habits and spending.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">vibration</span></span><h3 class="ft-t">Haptic feedback</h3><p class="ft-s">Subtle taps as you navigate.</p></li>
+      <li class="ft-tile"><span class="ft-ic"><span class="ms" aria-hidden="true">waving_hand</span></span><h3 class="ft-t">Guided onboarding</h3><p class="ft-s">A short walkthrough on first launch.</p></li>
+    </ul>
+  </div>
+</section>
+<style>
+  .bk-points { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .bk-points li { display: flex; gap: 12px; align-items: flex-start; color: var(--text); }
+  .bk-points .ms { color: var(--done); font-size: 22px; flex-shrink: 0; margin-top: 1px; }
+  .bk-file { padding: 28px 24px 24px; box-shadow: var(--shadow); }
+  .bk-file-ic { width: 56px; height: 56px; border-radius: var(--r-md); background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.28); display: grid; place-items: center; }
+  .bk-file-ic .ms { font-size: 30px; }
+  .bk-file-t { margin: 18px 0 10px; font-size: 24px; font-weight: 800; line-height: 1.15; }
+  .bk-file .ph-bar { width: 42%; }
+  .bk-chips { display: grid; grid-template-columns: repeat(8, minmax(0, 44px)); gap: 8px; margin-top: 26px; }
+  .bk-chips span { aspect-ratio: 1; border-radius: var(--r-sm); background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.28); display: grid; place-items: center; min-width: 0; }
+  .bk-chips .ms { font-size: 20px; color: #fff; }
+  @media (max-width: 420px) { .bk-file { padding: 22px 18px 18px; } .bk-chips { gap: 6px; } .bk-chips .ms { font-size: 17px; } .bk-chips span { border-radius: 9px; } }
+  .bk-rows { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+  .bk-row { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-sm); }
+  .bk-row-ic { width: 36px; height: 36px; border-radius: 50%; background: var(--icon-bg); display: grid; place-items: center; flex-shrink: 0; }
+  .bk-row-ic .ms { font-size: 20px; color: var(--accent); }
+  .bk-row-tx { flex: 1; min-width: 0; }
+  .bk-row-t { font-size: 15px; font-weight: 700; }
+  .bk-row-s { font-size: 12px; color: var(--text2); }
+  .bk-row > .ms { color: var(--text3); font-size: 22px; flex-shrink: 0; }
+</style>
+<section id="backup" class="section">
+  <div class="wrap split">
+    <div class="bk-copy">
+      <div class="eyebrow">Backup and restore</div>
+      <h2 class="h2">Your data, in one file</h2>
+      <p class="lede">Save everything to a single file and keep it wherever you like. Bring it back on a new phone and pick up where you left off.</p>
+      <ul class="bk-points">
+        <li><span class="ms" aria-hidden="true">check_circle</span><span>One file holds all eight modules</span></li>
+        <li><span class="ms" aria-hidden="true">check_circle</span><span>Restore on a new phone in a few taps</span></li>
+      </ul>
+    </div>
+    <div class="bk-side">
+      <div class="gcard bk-file" style="background: var(--g-routine)" role="img" aria-label="One backup file that holds all eight modules">
+        <div class="bk-file-ic"><span class="ms" aria-hidden="true">description</span></div>
+        <div class="bk-file-t">Your backup</div>
+        <span class="ph-bar"></span>
+        <div class="bk-chips" aria-hidden="true"><span><span class="ms">notifications</span></span><span><span class="ms">view_kanban</span></span><span><span class="ms">timer</span></span><span><span class="ms">repeat</span></span><span><span class="ms">account_balance_wallet</span></span><span><span class="ms">edit_calendar</span></span><span><span class="ms">timeline</span></span><span><span class="ms">bedtime</span></span></div>
+      </div>
+      <div class="bk-rows">
+        <div class="bk-row"><span class="bk-row-ic"><span class="ms" aria-hidden="true">upload</span></span><div class="bk-row-tx"><div class="bk-row-t">Back up</div><div class="bk-row-s">Save a copy of everything</div></div><span class="ms" aria-hidden="true">chevron_right</span></div>
+        <div class="bk-row"><span class="bk-row-ic"><span class="ms" aria-hidden="true">download</span></span><div class="bk-row-tx"><div class="bk-row-t">Restore</div><div class="bk-row-s">Bring your data back</div></div><span class="ms" aria-hidden="true">chevron_right</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="section">
+  <div class="wrap">
+    <div class="gcard dl-card">
+      <img class="dl-icon" src="data:image/png;base64,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" alt="" width="64" height="64">
+      <h2 class="h2 dl-title">Coming soon to Android and iOS</h2>
+      <p class="dl-line">Productivity Plus is in final testing. Check back soon.</p>
+      <div class="dl-actions">
+        <span class="btn dl-btn soon" aria-disabled="true"><span class="ms" aria-hidden="true">schedule</span>Coming soon</span>
+        <span class="dl-chip"><span class="ms" aria-hidden="true">android</span>Android</span>
+        <span class="dl-chip"><span class="ms" aria-hidden="true">phone_iphone</span>iOS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="foot-brand-row" href="#top">
+          <img src="data:image/png;base64,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" alt="" width="32" height="32">
+          <span>Productivity +</span>
+        </a>
+        <p class="foot-tag">Reminders, kanban, routines, habits, expenses, plans, timelines and sleep.</p>
+      </div>
+      <nav aria-label="Product">
+        <h2 class="foot-h">Product</h2>
+        <ul class="foot-list">
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#backup">Backup</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Modules">
+        <h2 class="foot-h">Modules</h2>
+        <ul class="foot-list">
+          <li><a href="#m-reminders">Reminders</a></li>
+          <li><a href="#m-kanban">Kanban Board</a></li>
+          <li><a href="#m-routine">Daily Routine</a></li>
+          <li><a href="#m-habit">Habit Tracking</a></li>
+          <li><a href="#m-expense">Expense Tracking</a></li>
+          <li><a href="#m-planner">Day Planner</a></li>
+          <li><a href="#m-timeline">Track Timelines</a></li>
+          <li><a href="#m-sleep">Sleep Tracking</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Productivity Plus. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var KEY = "pp-theme";
+  var btn = document.getElementById("nav-theme");
+  if (!btn) return;
+  var icon = btn.querySelector(".ms");
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+  function readSaved() {
+    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+  }
+  function save(v) {
+    try { localStorage.setItem(KEY, v); } catch (e) {}
+  }
+  function current() {
+    var t = root.getAttribute("data-theme");
+    if (t === "light" || t === "dark") return t;
+    return mq && mq.matches ? "dark" : "light";
+  }
+  function paint() {
+    var dark = current() === "dark";
+    icon.textContent = dark ? "light_mode" : "dark_mode";
+    btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+    btn.setAttribute("title", dark ? "Light mode" : "Dark mode");
+  }
+
+  var saved = readSaved();
+  if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved);
+  paint();
+
+  btn.addEventListener("click", function () {
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    save(next);
+    paint();
+  });
+
+  if (mq) {
+    if (mq.addEventListener) mq.addEventListener("change", paint);
+    else if (mq.addListener) mq.addListener(paint);
+  }
+})();
+</script>
